@@ -1,0 +1,51 @@
+Charity Funding Predictor
+
+A model to predict if an applicant for funding the non-profit organization Alphabet Soup would be successful or not was created in this project.
+
+With the information we had, I was able to use the feature “Is successful” as our target by telling us whether the applicants were successful or not.
+
+To create the model we had to clean the data that was given, by removing unnecessary features like names and Id’s of the organizations, as well as binding some fields to reduce the amount of outliers.
+
+After that the model considered this as features:
+
+· Application Type
+
+· Affiliation
+
+· Classification
+
+· Use Case
+
+· Organization
+
+· Status
+
+· Income amt
+
+· Special Considerations
+
+· Ask Amt
+
+Categorical data features generated for inputs of the model were 108.
+
+Model #1
+
+The first dense layer was created using 108 inputs and two hidden layers of 80 and 30 neurons using the 'Relu' as the activation and the output layer using one neuron and a 'Sigmoid' activation was used.
+The model was trained with 80epochs.
+Loss: 0.5695 , Accuracy: 0.7313
+
+Model #2
+
+Inputs = 108, 3 layers (100, 60 and 30 with the 'Relu" activation
+Model was trained with 100 epochs
+Loss: 0.5884 , Accuracy: 0.7317
+Note: The model didn't lose accuracy or loss with the addition of another layer.
+
+Model #3 
+
+Inputs = 108, 2 layers(80 'Relu', 20 'Tanh')
+Model was trained with 100epochs
+Loss: 0.5563 , Accuracy: 0.7311
+Note: This model didn't seem to lose accuracy and loss even I used a Tanh activation function.
+
+Trying to improve the model to at least 75%, didnt seem to happen despite the different features added.
